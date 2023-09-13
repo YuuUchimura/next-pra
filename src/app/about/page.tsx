@@ -5,15 +5,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1>TOP</h1>
+      <h1>About</h1>
       <Button variant="secondary" className="mx-5">
         Button
       </Button>
-      {/* `@radix-ui/react-slot`によってLinkにButtonの見た目を渡せる。  */}
       <Button asChild>
-        <Link href="/about">About</Link>
+        <Link href="/">TOP</Link>
       </Button>
-      <Parent initialCount={1} />
     </>
   );
 }

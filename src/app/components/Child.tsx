@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 type Props = {
   onIncrement: () => void;
 };
@@ -5,7 +6,11 @@ type Props = {
 const Child = ({ onIncrement }: Props) => {
   console.log("Child component rendered");
 
-  return <button onClick={onIncrement}>Increment</button>;
+  return (
+    <Button variant="outline" onClick={onIncrement}>
+      Increment
+    </Button>
+  );
 };
 
 export default Child;
