@@ -1,4 +1,4 @@
-import Parent from "@/app/components/Parent";
+import Parent from "@/components/Parent";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 

@@ -1,8 +1,8 @@
-import Parent from "@/app/components/Parent";
+import Parent from "@/components/Parent";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <h1>About</h1>
@@ -11,6 +11,9 @@ export default function Home() {
       </Button>
       <Button asChild>
         <Link href="/">TOP</Link>
+      </Button>
+      <Button asChild>
+        <Link href="/info">Info</Link>
       </Button>
     </>
   );
